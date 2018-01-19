@@ -51,7 +51,7 @@ def WebCMS(url):
                     urlbool = x["re"]
                     urlbool = str(urlbool)
                     if urlbool in xreurlopen:
-                        recmsnameurl = 'http://'+url+x["url"] + ':' + x["name"]
+                        recmsnameurl = url+x["url"] + ':' + x["name"]
                         supercms = recmsnameurl
                         textbuff = 0
 
@@ -60,7 +60,7 @@ def WebCMS(url):
                     m.update(xreurlopen)
                     md5 = m.hexdigest()
                     if md5 == x["md5"]:
-                        cmsnameurl = x["url"] + ':' + x["name"]
+                        cmsnameurl = url+x["url"] + ':' + x["name"]
                         textbuff = 0
                         supercms = cmsnameurl
 
