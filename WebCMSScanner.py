@@ -28,7 +28,6 @@ def WebCMS(url):
             mulocal.release()
             zurl =http + url + x["url"]
 
-            print zurl
             erbai = 0
             try:
                 reurlopen = urllib2.urlopen(zurl,timeout=20)
